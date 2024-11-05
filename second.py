@@ -23,12 +23,12 @@ coverage = 0.8
 pitch = 10*a
 # Total number of rings
 rings = 32
-# Kerning value for adjacent elements within a ring
-kerning_setpoint = 100
+# Kerf value for adjacent elements within a ring
+kerf_setpoint = 100
 # Determines number of elements in a ring
 count = np.linspace(0,(rings-1)*10.0,rings)+4 
 # Determines ring radii
-radii = (kerning_setpoint/2 + a)/np.sin(np.pi/count) 
+radii = (kerf_setpoint/2 + a)/np.sin(np.pi/count) 
 orientation = np.ones(np.size(radii))
 
 gap = 25 # The spacing between signal rails within a ring [um]
